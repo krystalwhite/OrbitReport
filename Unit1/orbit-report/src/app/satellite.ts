@@ -11,6 +11,17 @@ export class Satellite {
         this.launchDate = launchDate;
         this.orbitType = orbitType;
         this.operational = operational;
+
+    }
+
+    shouldShowWarning() {
+        if (this.type.toLowerCase() === "space debris") {
+            // adds the warning CSS class to the <td> containing the satellite's type
+            // come back and incorporate this after reading lesson 3 chapter
+            return true;
+        } else {
+            return false;
+        }
     }
 
 
