@@ -4,6 +4,7 @@ export class Satellite {
     type: string;
     operational: boolean;
     launchDate: string;
+    warningStatus: boolean = false;
 
     constructor(name: string, type: string, launchDate: string, orbitType: string, operational: boolean) {
         this.name = name;
@@ -17,7 +18,6 @@ export class Satellite {
     shouldShowWarning() {
         if (this.type.toLowerCase() === "space debris") {
             // adds the warning CSS class to the <td> containing the satellite's type
-            // come back and incorporate this after reading lesson 3 chapter
             return true;
         } else {
             return false;
