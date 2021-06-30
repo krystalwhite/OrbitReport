@@ -5,7 +5,7 @@
 
 
 <div class="search-form"> 
-    <input (keyup.enter) = "search(searchTerm.value)" type="text" placeholder="Search here">
+    <input #searchTerm (keyup.enter) = "search(searchTerm.value)" type="text" placeholder="Search here">
     <button (click) = "search(searchTerm.value)">Search</button>
 </div> 
 
