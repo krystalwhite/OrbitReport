@@ -12,7 +12,6 @@ export class AppComponent {
 
   sourceList: Satellite[];
   displayList: Satellite[];
-  searchTerm: string;
 
 constructor() {
   // this.sourceList = [
