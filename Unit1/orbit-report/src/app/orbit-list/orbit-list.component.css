@@ -4,16 +4,16 @@
 }
 
 .warning {
-    background-color: #da8a8a;
+    background-color: #ca0d0d;
 }
 
 table {
-  color: rgb(155, 19, 137);
+  color: black;
   border-radius: 5px;
   overflow: hidden;
   margin: 15px 0;
   min-width: 900px;
-  background: #90bdd6;
+  background: rgb(165, 134, 156);
 }
 
 .header-row {
@@ -27,6 +27,6 @@ th, td {
     padding: 10px;
 }
 
-.zebra {
-    background-color: lightseagreen;
+tr:nth-child(even) {
+    background-color: cyan;
 }
